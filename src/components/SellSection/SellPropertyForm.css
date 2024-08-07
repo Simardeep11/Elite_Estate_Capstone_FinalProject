@@ -1,0 +1,57 @@
+/* SellPropertyForm.css */
+
+.sell-property-form-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #afa193;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sell-property-form-wrapper h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.sell-property-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sell-property-form input,
+.sell-property-form textarea,
+.sell-property-form button {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.sell-property-form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.sell-property-form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sell-property-form button:hover {
+  background-color: #45a049;
+}
+
+.sell-property-form button[type="button"] {
+  background-color: #f44336;
+}
+
+.sell-property-form button[type="button"]:hover {
+  background-color: #e53935;
+}

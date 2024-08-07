@@ -1,0 +1,73 @@
+.f-wrapper {
+  background-color: #9f9589; /* Using an even lighter beige color for background */
+  padding: 39px 13px; /* Reduced by 35% */
+  border-top: 1px solid #e0e0e0;
+  margin-top: 25px;
+}
+
+.f-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.f-about, .f-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  text-align: center;
+  margin-bottom: 13px; /* Reduced by 35% */
+}
+
+.footer-logo {
+  width: 78px; /* Reduced by 35% */
+  margin-bottom: 6.5px; /* Reduced by 35% */
+}
+
+.footer-text {
+  font-size: 10.4px; /* Reduced by 35% */
+  margin-bottom: 6.5px; /* Reduced by 35% */
+  color: #403530; /* Using the dark brown color for text */
+  line-height: 1.5;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 13px; /* Reduced by 35% */
+}
+
+.social-media a {
+  margin: 0 6.5px; /* Reduced by 35% */
+}
+
+.social-icon {
+  width: 19.5px; /* Reduced by 35% */
+  height: 19.5px; /* Reduced by 35% */
+}
+
+@media (max-width: 768px) {
+  .f-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .f-about, .f-right {
+      align-items: center;
+      text-align: center;
+  }
+
+  .f-right {
+      flex-direction: column;
+      margin-top: 13px; /* Reduced by 35% */
+  }
+
+  .social-media {
+      justify-content: center;
+  }
+}

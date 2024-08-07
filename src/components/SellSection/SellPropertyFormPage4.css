@@ -1,0 +1,182 @@
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.page4-container {
+  display: flex;
+  height: 100vh;
+}
+
+.page4-left-column {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.page4-left-column::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/BBSELL4.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.page4-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  max-width: 100px;
+  z-index: 1;
+}
+
+.page4-heading {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.page4-details-heading {
+  font-size: 1.2em;
+  color: #403530; /* Dark Brown */
+  z-index: 1;
+}
+
+.page4-contact-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  width: 100%;
+  margin-top: 20px;
+  z-index: 1;
+}
+
+.page4-right-column {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #D2C8BA; /* Light Beige */
+  padding: 20px;
+}
+
+.page4-form-container {
+  background-color: #fff; /* White */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.page4-form-container h1 {
+  color: #403530; /* Dark Brown */
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.page4-sell-property-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.page4-horizontal-structure {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.page4-image-upload-section {
+ 
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.page4-sell-property-input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+ 
+  box-sizing: border-box;
+}
+
+.dropzone {
+  border: 2px dashed #cccccc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.page4-image-preview {
+  margin-top: 10px;
+
+  justify-content: center;
+}
+
+.page4-image-preview img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.page4-button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.page4-back-button, .page4-submit-button {
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.page4-back-button {
+  background-color: #e57373;
+}
+
+.page4-back-button:hover {
+  background-color: #d32f2f;
+}
+
+.page4-submit-button {
+  background-color: #9f9589;
+}
+
+.page4-submit-button:hover {
+  background-color: #85796f;
+}

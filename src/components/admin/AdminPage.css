@@ -1,0 +1,156 @@
+/* Overall admin page styling */
+
+.admin-wrapper {
+  display: flex;
+  flex-direction: column; /* Adjust to column for better layout */
+  align-items: center; /* Center the items */
+  width: 100%; /* Use full width of the viewport */
+  margin: 0 ; /* Center the wrapper */
+  background-color: #D2C8BA; /* Light beige background */
+  padding: 8px;
+}
+
+/* Header styling */
+.admin-heading {
+  text-align: center;
+  width: 100%; /* Full width for the header */
+  padding: 20px 0;
+  background-color: transparent; /* Remove brown background */
+  color: white; /* White text color */
+  margin-bottom: 10px; /* Space below the header */
+  border-radius: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 2rem; /* Subtle shadow for elevation */
+}
+
+/* Main content area containing form and list */
+.admin-content {
+  display: flex;
+  width: 100%; /* Full width to contain both form and list side by side */
+  background-color: #d8d3cc; /* White background for content areas */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for elevation */
+}
+
+/* Form section styling */
+.admin-form-section {
+  flex: 1; /* Allocate half of the space to form */
+  padding: 20px; /* Padding to separate form from the list */
+  border-right: 2px solid #ccc; /* Grey border to separate form from list */
+  overflow-y: auto; /* Allow vertical scrolling */
+  height: 800px; /* Fixed height to enable scrolling */
+  background-color: #d8d3cc; /* Semi-transparent light background */
+  color: #333; /* Dark text color */
+  border-radius: 10px;
+}
+
+/* Adjust image size within the form */
+.admin-form-section img {
+  max-width: 100px; /* Limit width to 100px */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Space below the image */
+}
+
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between form elements */
+}
+
+/* Property list section styling */
+.admin-list {
+  flex: 2; /* Allocate more space to the list than the form */
+  padding: 20px; /* Padding to separate list from the form */
+  overflow-y: auto; /* Allow scrolling for long lists */
+  height: 800px; /* Fixed height for consistent layout */
+  background-color: #b0a8a0; /* Semi-transparent light background */
+  color: #333; /* Dark text color */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for elevation */
+}
+
+/* Styling individual property items within the list */
+.admin-list-item {
+  border: 1px solid #ddd; /* Light grey border around each item */
+  padding: 10px;
+  margin-bottom: 10px; /* Space between items */
+  background-color: #d8d3cc; /* Very light grey for item backgrounds */
+  border-radius: 10px;
+  color: #333; /* Dark grey for text */
+}
+
+.admin-list-item h2 {
+  margin: 0; /* Remove default margin */
+  padding-bottom: 10px; /* Space below the title */
+}
+
+.admin-list-item img {
+  max-width: 100%; /* Ensure image does not overflow its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.admin-additional-images img {
+  width: 50px; /* Smaller width for additional images */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 5px; /* Space between images */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .admin-content {
+    flex-direction: column; /* Stack elements vertically on small screens */
+  }
+
+  .admin-form-section, .admin-list {
+    padding: 10px; /* Adjust padding for smaller screens */
+    width: 100%; /* Full width for better readability */
+    height: auto; /* Remove fixed height for responsive behavior */
+  }
+}
+
+/* Buttons styling */
+.button-group {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 20px; /* Add space between buttons */
+  margin-top: 20px;
+}
+
+.approve-button, .delete-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.approve-button {
+  background: #28a745; /* Green */
+  color: white;
+}
+
+.approve-button:hover {
+  background-color: #218838;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow on hover */
+}
+
+.delete-button {
+  background: #dc3545; /* Red */
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow on hover */
+}
+
+.edit-form {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}

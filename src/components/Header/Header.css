@@ -1,0 +1,127 @@
+.ee-header-wrapper {
+  width: 100%;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: #403530; /* Ensure consistent background */
+  transition: background 0.3s;
+}
+
+.ee-innerWidth {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* Ensure no space on the sides */
+}
+
+.ee-paddings {
+  padding: 0 20px;
+}
+
+.ee-flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ee-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.ee-logo-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff; /* Set to white for visibility */
+}
+
+.ee-header-menu {
+  display: flex;
+  align-items: center;
+}
+
+.ee-header-menu a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff; /* Set to white for visibility */
+  font-weight: 500;
+}
+
+.ee-header-login-button {
+  background-color: #403530; /* Matching color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.ee-header-login-button:hover {
+  background-color: #9f9589; /* Dark Beige */
+  color: white;
+}
+
+.ee-profile-menu {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.ee-profile-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #756b65;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ee-profile-dropdown p, .ee-profile-dropdown button {
+  padding: 10px 20px;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.ee-profile-dropdown button.ee-logout-button {
+  color: black;
+}
+
+.ee-menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .ee-menu-icon {
+    display: block;
+  }
+  .ee-header-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .ee-header-menu a {
+    margin: 10px 0;
+  }
+  .ee-flexCenter.ee-header-menu {
+    display: flex;
+  }
+}

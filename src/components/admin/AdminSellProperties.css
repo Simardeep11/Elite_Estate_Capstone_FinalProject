@@ -1,0 +1,94 @@
+.admin-sell-properties-wrapper {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.admin-heading {
+  font-size: 2rem;
+  color: #9f9589;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.admin-sell-properties-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.admin-sell-property-item {
+  display: flex;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.admin-sell-property-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-wrapper {
+  flex: 1;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.property-details {
+  flex: 2;
+  margin-left: 20px;
+}
+
+.property-details h3 {
+  margin: 0;
+  color: #333;
+}
+
+.property-details p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.admin-additional-images {
+  margin-top: 10px;
+}
+
+.admin-additional-images img {
+  max-width: 100px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.button-group {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.approve-button,
+.delete-button {
+  padding: 10px 20px;
+  background-color: #9f9589;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.approve-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-button {
+  background-color: #f44336;
+}
+
+.delete-button:hover {
+  background-color: #e53935;
+}

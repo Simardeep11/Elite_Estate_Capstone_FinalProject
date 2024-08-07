@@ -1,0 +1,64 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4; /* Ensure the entire page has the subtle background color */
+}
+
+.my-bookings-wrapper {
+  padding: 6px;
+  max-width: 100%;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh; /* Ensure full height */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  background-color: #d8d3cc; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Prevent content from overflowing */
+}
+
+.my-bookings-wrapper h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #fff; /* Changed text color to white */
+}
+
+.my-bookings-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  background-color: white;  /* Subtle background for the main container */
+  padding: 10px; /* Padding for the main container */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: calc(100% - 100px); /* Adjust height considering header and padding */
+  overflow: auto; /* Add scrollbars to the main container */
+}
+
+.booking-item {
+  background: #d8d3cc; /* Updated to match the theme */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-item h2 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.booking-item p {
+  color: #555;
+}
+
+.booking-item:hover {
+  background-color: #e0e0e0; /* Slightly darker on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}

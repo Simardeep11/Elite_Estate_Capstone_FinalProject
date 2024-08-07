@@ -1,0 +1,164 @@
+/* General Styles for Admin Header */
+.h-wrapper {
+  z-index: 99;
+  position: sticky;
+  top: 0;
+  background-color: black;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.h-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: var(--secondary);
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.h-menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.h-menu a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.h-menu a:hover {
+  color: var(--accent);
+}
+
+.h-menu .button {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.h-menu .button:hover {
+  background-color: var(--accent);
+}
+
+/* Profile Menu Styles */
+.profile-menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 40px;  /* Adjust this to position the dropdown correctly */
+  right: 0;
+  background-color: #756b65;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 200px; /* Set width for the dropdown */
+}
+
+.profile-dropdown p {
+  margin: 0;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: #fff;
+  text-align: center;
+}
+
+.profile-dropdown button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #756b65;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.profile-dropdown button:hover {
+  background-color: #333;
+}
+
+.logout-button {
+  color:black;
+}
+
+/* Admin Dropdown Styles */
+
+.admin-menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.admin-dropdown {
+  position: absolute;
+  top: 40px;  /* Adjust this to position the dropdown correctly */
+  right: 0;
+  background-color: #756b65;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 200px; /* Set width for the dropdown */
+}
+
+.admin-dropdown p {
+  margin: 0;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: #756b65;
+  text-align: center;
+}
+
+
+.admin-dropdown button {
+   display: block;
+  width: 100%;
+  padding: 10px 20px;
+  background: #756b65;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.admin-dropdown button:hover {
+  background-color: #333;
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+  .h-menu {
+    color: var(--black);
+    position: absolute;
+    gap: 2rem;
+    font-weight: 500;
+    flex-direction: column;
+    right: 4rem;
+    top: 3rem;
+    background: white;
+    display: flex;
+    border-radius: 10px;
+    transition: all 200ms ease;
+    align-items: flex-start;
+    padding: 3rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  }
+}

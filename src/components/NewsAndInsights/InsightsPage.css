@@ -1,0 +1,90 @@
+/* InsightsPage.css */
+
+html, body, #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.insights-page-container {
+    background-color: #D2C8BA; /* Light beige background */
+}
+
+.insights-header {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding: 50px 10px;
+    background-color: #9f9589;/* Deep teal background color */
+    background-size: cover;
+    background-position: center;
+  }
+.insights-switch {
+    margin-top: 10px;
+}
+
+.insights-content {
+    padding: 20px;
+    background-color: #D2C8BA;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    background-color: #403530;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab-button.active {
+    background-color: #9f9589; /* Dark Beige */
+}
+
+.tab-button:hover {
+    background-color: #85796f;
+}
+
+.carousel-arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-arrow-prev {
+    left: 10px;
+}
+
+.carousel-arrow-next {
+    right: 10px;
+}
+
+.carousel .slide {
+    background: none;
+}
+
+.carousel .control-dots .dot {
+    background: #403530;
+}
+
+.carousel .control-dots .dot.selected {
+    background: #9f9589; /* Dark Beige */
+}

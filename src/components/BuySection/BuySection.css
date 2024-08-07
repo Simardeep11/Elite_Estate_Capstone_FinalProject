@@ -1,0 +1,156 @@
+/* Container Styling */
+.buy-wrapper {
+  background-color: #e8e8e8; /* Subtle and matching background color */
+  padding: 54px 18px; /* Reduced by 10% */
+  margin: 45px auto; /* Reduced by 10% */
+}
+
+.buy-container {
+  width: 100%;
+  max-width: 1080px; /* Reduced by 10% */
+  margin: 0 auto;
+  gap: 1.8rem; /* Reduced by 10% */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Header Section Styling */
+.buy-head {
+  text-align: center;
+  margin-bottom: 1.8rem; /* Reduced by 10% */
+}
+
+.buy-orangeText {
+  color: #d4a373;
+  font-size: 1.35rem; /* Reduced by 10% */
+  font-weight: bold;
+  margin-bottom: 0.45rem; /* Reduced by 10% */
+}
+
+.buy-primaryText {
+  color: #403530;
+  font-size: 1.8rem; /* Reduced by 10% */
+  font-weight: bold;
+}
+
+/* Card Styling */
+.buy-card {
+  display: block;
+  gap: 0.54rem; /* Reduced by 10% */
+  padding: 0.9rem; /* Reduced by 10% */
+  border-radius: 9px; /* Reduced by 10% */
+  background-color: #ffffff;
+  box-shadow: 0 3.6px 7.2px rgba(0, 0, 0, 0.1); /* Reduced by 10% */
+  transition: all 300ms ease-in;
+  max-width: 270px; /* Reduced by 10% */
+  height: 360px; /* Reduced by 10% */
+  margin: auto;
+}
+
+.buy-card img {
+  width: 100%;
+  border-radius: 9px; /* Reduced by 10% */
+  margin-bottom: 0.9rem; /* Reduced by 10% */
+}
+
+.buy-price {
+  font-size: 1.08rem; /* Reduced by 10% */
+  font-weight: 600;
+  color: #d4a373;
+}
+
+.buy-primaryText {
+  font-size: 1.35rem; /* Reduced by 10% */
+  color: #403530;
+}
+
+.buy-secondaryText {
+  font-size: 0.9rem; /* Reduced by 10% */
+  color: #666666;
+  text-align: center;
+}
+
+.buy-card:hover {
+  transform: scale(1.025);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(136, 160, 255, 0.46) 217.91%
+  );
+  box-shadow: 0px 64.8px 44.1px -45.9px rgba(136, 160, 255, 0.21); /* Reduced by 10% */
+  cursor: pointer;
+}
+
+.swiper-horizontal {
+  overflow: visible;
+}
+
+.buy-buttons {
+  gap: 0.9rem; /* Reduced by 10% */
+  position: absolute;
+  top: -3.6rem; /* Reduced by 10% */
+  right: 0;
+}
+
+.buy-buttons button {
+  font-size: 1.08rem; /* Reduced by 10% */
+  padding: 0.18rem 0.72rem; /* Reduced by 10% */
+  color: #403530;
+  border: none;
+  border-radius: 4.5px; /* Reduced by 10% */
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.buy-buttons button:hover {
+  background-color: #d4a373;
+}
+
+.buy-prevButton {
+  background-color: #eeeeff;
+}
+
+.buy-nextButton {
+  box-shadow: 0px 0px 4.5px 0.9px rgba(0, 0, 0, 0.25); /* Reduced by 10% */
+}
+
+.buy-explore-all-wrapper {
+  text-align: center;
+  margin-top: 1.8rem; /* Reduced by 10% */
+}
+
+.buy-explore-all-button {
+  background: #403530;
+  color: white;
+  padding: 10.8px 21.6px; /* Reduced by 10% */
+  border: none;
+  border-radius: 4.5px; /* Reduced by 10% */
+  font-size: 16.2px; /* Reduced by 10% */
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.buy-explore-all-button:hover {
+  background: #d4a373;
+  transform: scale(1.05);
+}
+
+@media (max-width: 640px) {
+  .buy-head {
+    text-align: center;
+  }
+  .buy-buttons {
+    position: initial;
+  }
+  .buy-card {
+    width: 100%;
+  }
+}
+
+.buy-flexRowSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}

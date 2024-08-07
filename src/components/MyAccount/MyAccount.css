@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #d8d3cc; /* Set the beige color for the background */
+  height: 100%; /* Ensure full height */
+  width: 100%; /* Ensure full width */
+}
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure full height */
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.account-container {
+  width: 100%;
+  height: 100%; /* Ensure the container takes full height */
+  padding: 2rem;
+  background-color: #eae7e3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: #333; /* Ensure text color is visible */
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #333; /* Ensure text color is visible */
+  text-align: center;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333; /* Ensure text color is visible */
+  cursor: pointer;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333; /* Ensure text color is visible */
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff; /* Lighten the background of inputs */
+  color: #333; /* Ensure text color is visible */
+  font-size: 1rem;
+}
+
+.input-group input::placeholder,
+.input-group select::placeholder,
+.input-group textarea::placeholder {
+  color: #999; /* Placeholder color */
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+  border-color: var(--blue); /* Highlight border on focus */
+  outline: none; /* Remove default focus outline */
+}
+
+button {
+  align-self: center;
+  padding: 0.75rem 1.5rem;
+  background: #007bff; /* Blue color for the button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: #0056b3; /* Darker blue for hover effect */
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab {
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.tab:hover,
+.tab.active {
+  color: #333;
+  border-bottom: 2px solid #333;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}

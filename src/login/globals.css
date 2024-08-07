@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4; /* Ensure the entire page has the subtle background color */
+}
+
+.login-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('/background.jpg'); /* Use absolute path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.login-container {
+  display: flex;
+  width: 60%;
+  max-width: 960px;
+  height: 80%;
+  background: rgba(255, 255, 255, 0.1); /* Transparent white background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Added box shadow for blur effect */
+  border: 2px solid rgba(0, 0, 0, 0.5); /* Border color changed to black */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Other CSS remains the same */
+
+.login-left,
+.login-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* Removed padding */
+  background: transparent; /* Make the background transparent */
+}
+
+.login-left {
+  color: white;
+}
+
+.login-right {
+  height: 100%; /* Ensure the login-right takes full height */
+  width: 100%; /* Ensure the login-right takes full width */
+}
+
+.form-container {
+  width: 100%; /* Adjust the width as needed */
+  max-width: 600px; /* Set a max-width for the form */
+  height: 100%; /* Ensure the form container takes full height */
+  background: rgba(255, 255, 255, 0.9); /* White background with some opacity */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for the form container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0; /* Removed margin */
+  padding: 40px; /* Added padding inside the form container */
+}
+
+.form-container form {
+  width: 100%; /* Ensure the form container fits inside the login-right */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container form label {
+  width: 100%; /* Make sure labels take full width */
+  margin-bottom: 5px; /* Add some space between labels and inputs */
+}
+
+.form-container form input {
+  width: 100%; /* Make sure inputs take full width */
+  padding: 10px; /* Add padding inside inputs */
+  margin-bottom: 10px; /* Add space between inputs */
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.input,
+.reset-button,
+.login-button,
+.signup-button,
+.google-button {
+  width: 100%; /* Ensure inputs and buttons use the full width */
+  padding: 10px;
+  margin-bottom: 10px; /* Adjusted for consistent spacing */
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  color: #666;
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.text-red-500 {
+  color: #ff0000;
+  text-align: center;
+}
+
+.text-green-500 {
+  color: #00ff00;
+  text-align: center;
+}
+
+.hero-title {
+  background: none; /* Remove the black background */
+  color: #fff; /* Ensure text is white or any color that fits the design */
+  padding: 0; /* Remove padding that might be causing any unwanted spacing */
+}
+
+.hero-title h1 {
+  background: none; /* Remove any background */
+  color: #fff; /* Ensure text is white or any color that fits the design */
+  padding: 0; /* Remove padding that might be causing any unwanted spacing */
+}
+
+.hero-title p {
+  color: #fff; /* Change paragraph text color to white */
+}

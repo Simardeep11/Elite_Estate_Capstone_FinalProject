@@ -1,0 +1,463 @@
+.property-detail-info {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding-left: 20px; /* Adds padding on the left side of the entire property info container */
+  padding-right: 20px; /* Adds padding on the right side of the entire property info container */
+}
+
+.listing-description,
+.property-summary,
+.building-details,
+.room-dimensions {
+  margin-bottom: 20px;
+  background-color: #fff;
+  
+}
+
+.listing-description h2,
+.property-summary h2,
+.building-details h2,
+.room-dimensions h2 {
+  text-align: left; /* Align text to the left */
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+  padding-left: 20px; /* Add padding to align with the rest of the content */
+}
+
+.summary-grid,
+.building-grid,
+.room-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  background-color: #fff; 
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  height: 100%; /* Ensure full height for body and html */
+}
+
+.my-favorites-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  height: 100vh; /* Ensure the wrapper takes full height */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  background-color: #d8d3cc; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.my-favorites-wrapper h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #fff; /* Changed text color to white */
+}
+
+.my-favorites-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  background-color: #f9f9f9;  /* Subtle background for the main container */
+  padding: 10px; /* Padding for the main container */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1; /* Flex grow to fill remaining space */
+  overflow: auto; /* Add scrollbars to the main container */
+  align-items: flex-start; /* Align items to the start to prevent stretching */
+}
+
+.property-item {
+  background: #fff; /* Keeping the white background for the property items */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column; /* Ensure the content inside the property item is arranged in a column */
+}
+
+.property-item:hover {
+  transform: scale(1.05);
+}
+
+.image-wrapper {
+  position: relative;
+  height: 200px; /* Fixed height for image wrapper to ensure consistency */
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%; /* Ensure the image fills the wrapper */
+  object-fit: cover;
+}
+
+.property-details {
+  padding: 15px;
+  flex: 1; /* Ensure the details take up the remaining space */
+}
+
+.property-details h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.property-details p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.favorite {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: red; /* Adjusted color for the heart icon */
+  font-size: 1.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.property-name {
+  color: #c7a980; /* Changed color to #c7a980 */
+}
+
+/* Additional CSS for property details page */
+.property-detail-info {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding-left: 20px; /* Adds padding on the left side of the entire property info container */
+  padding-right: 20px; /* Adds padding on the right side of the entire property info container */
+}
+
+.listing-description,
+.property-summary,
+.building-details,
+.room-dimensions {
+  margin-bottom: 20px;
+  background-color: #fff;
+  
+}
+
+.listing-description h2,
+.property-summary h2,
+.building-details h2,
+.room-dimensions h2 {
+  text-align: left; /* Align text to the left */
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+  padding-left: 20px; /* Add padding to align with the rest of the content */
+}
+
+.summary-grid,
+.building-grid,
+.room-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  background-color: #fff; 
+}
+
+.room-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.room {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  
+}
+
+.property-detail-map {
+  margin-bottom: 20px;
+}
+
+.book-visit-button {
+  background-color: #ff6200;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  
+}
+
+.book-visit-button:hover {
+  background-color: #e55b00;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.property-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.property-main-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.property-additional-images {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.property-additional-image {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.property-additional-image:hover {
+  transform: scale(1.1);
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.lightbox img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+/* Styles for the property information layout */
+.property-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.property-name {
+  font-size: 36px; /* Adjust font size as needed */
+  font-weight: bold;
+  color: #c7a980; /* Custom color for the property name */
+}
+
+.property-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f0f0f0;
+  padding-left: 40px;
+}
+
+.property-address {
+  display: block; /* Ensures the address is on its own line */
+  margin-top: 60px; /* Space between the price and the address */
+  margin-right: auto;
+  margin-left: -120px;
+  color: #f0f0f0; /* Keeps everything aligned to the left */
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.favorite-button {
+  background: none;
+  color: #ff6200;
+  cursor: pointer;
+  font-size: 24px;
+  border: none;
+}
+
+.action-buttons button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.favorite-button, .book-visit-button {
+  border: none;
+}
+
+.room-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.room {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  
+}
+
+.property-detail-map {
+  margin-bottom: 20px;
+}
+
+.book-visit-button {
+  background-color: #ff6200;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  
+}
+
+.book-visit-button:hover {
+  background-color: #e55b00;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.property-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.property-main-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.property-additional-images {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.property-additional-image {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.property-additional-image:hover {
+  transform: scale(1.1);
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.lightbox img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+/* Styles for the property information layout */
+.property-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.property-name {
+  font-size: 36px; /* Adjust font size as needed */
+  font-weight: bold;
+  color: #c7a980(136, 160, 255, 0.46); /* Custom color for the property name */
+}
+
+.property-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f0f0f0;
+  padding-left: 40px;
+}
+
+.property-address {
+  display: block; /* Ensures the address is on its own line */
+  margin-top: 60px; /* Space between the price and the address */
+  margin-right: auto;
+  margin-left: -120px;
+    color: #f0f0f0; /* Keeps everything aligned to the left */
+}
+
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.favorite-button {
+  background: none;
+  color: #ff6200;
+  cursor: pointer;
+  font-size: 24px;
+  border: none;
+}
+
+.action-buttons button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.favorite-button, .book-visit-button {
+  border: none;
+}

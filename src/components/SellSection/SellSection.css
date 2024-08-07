@@ -1,0 +1,110 @@
+.v-wrapper {
+  background-color: #f5f5f5;
+  padding: 60px 20px;
+  margin-bottom: 50px;
+  background-color: #f0f0f5; /* Subtle background color for differentiation */
+}
+
+.v-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: auto; /* Ensure it adjusts to content */
+}
+
+.v-left {
+  flex: 1;
+  padding: 20px;
+}
+
+.v-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.value-image {
+  width: 80%; /* Adjust as needed */
+  height: auto;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%); /* New shape for the image */
+  overflow: hidden;
+}
+
+.highlightText {
+  color: #403530; /* Dark Brown */
+  font-size: 30px; /* Increased size */
+  font-weight: bold;
+  margin-bottom: 15px; /* Increased spacing */
+}
+
+.mainText {
+  font-size: 40px; /* Increased size */
+  font-weight: bold;
+  color: #403530; /* Dark Brown */
+  margin-bottom: 25px; /* Increased spacing */
+}
+
+.descriptionText {
+  font-size: 18px; /* Increased size */
+  color: #666;
+  margin-bottom: 25px; /* Increased spacing */
+  line-height: 1.8; /* Improved line height */
+}
+
+.sell-property-button {
+  background: #9f9589; /* Dark Beige */
+  color: white;
+  padding: 14px 28px; /* Slightly larger button */
+  border: none;
+  border-radius: 5px;
+  font-size: 20px; /* Larger font */
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  margin-bottom: 30px; /* Increased spacing */
+}
+
+.sell-property-button:hover {
+  background: #403530; /* Dark Brown */
+  transform: scale(1.05);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.flexColStart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .v-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto; /* Adjust height for vertical layout */
+  }
+
+  .v-left, .v-right {
+    width: 100%;
+  }
+
+  .v-right {
+    padding: 16px 0;
+  }
+}

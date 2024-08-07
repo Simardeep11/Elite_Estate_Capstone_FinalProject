@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roc+Grotesk:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roc Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b0a8a0;
+}
+
+.separator {
+    height: 20px; /* Adjust the height as needed */
+    background-color: #756b65; /* Darker color for the separator */
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #eae7e3; /* Different background color for the contact section */
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #8f8680;
+}
+
+.contact-info {
+    flex: 1.5;
+    padding: 20px;
+    text-align: left;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-info h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-info p strong {
+    font-weight: bold;
+}
+
+.social-media {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-top: 8px;
+}
+
+.social-icon2 {
+    width: 45px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.map-container {
+    flex: 2;
+    padding: 20px;
+    background-color: #d8d3cc; /* Slightly darker color for the map container */
+}
+
+.map-embed {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+}
+
+.location {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.location h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.location p {
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+    .contact-info {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+    .map-container {
+        padding-top: 0;
+    }
+    .social-media {
+        justify-content: center;
+    }
+}

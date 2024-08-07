@@ -1,0 +1,166 @@
+/* Container Styling */
+.ni-container {
+    background: #f5f5f5;
+    padding: 32px; /* Reduced by 20% */
+    border-radius: 10px;
+    box-shadow: 0 3.2px 6.4px rgba(0, 0, 0, 0.1); /* Reduced by 20% */
+    font-family: 'Arial', sans-serif;
+    height: 560px; /* Reduced by 20% */
+    margin-bottom: 50px; /* Reduced by 20% */
+}
+
+/* Header Section Styling */
+.ni-header-section {
+    text-align: center;
+    color: #333;
+    margin-bottom: 16px; /* Reduced by 20% */
+}
+
+.ni-header-section h1 {
+    font-size: 2.4em; /* Reduced by 20% */
+    font-weight: bold;
+    margin-bottom: 8px; /* Reduced by 20% */
+}
+
+.ni-header-section h3 {
+    font-size: 1.2em; /* Reduced by 20% */
+    margin-bottom: 8px; /* Reduced by 20% */
+}
+
+.ni-header-section p {
+    font-size: 0.96em; /* Reduced by 20% */
+    margin-bottom: 16px; /* Reduced by 20% */
+}
+
+/* Main Content Section Styling */
+.ni-main-content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px; /* Reduced by 20% */
+    height: calc(100% - 144px); /* Adjusted height considering header and footer */
+}
+
+/* Left and Right Column Styling */
+.ni-left-column {
+    flex: 1;
+    padding: 16px; /* Reduced by 20% */
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 3.2px 6.4px rgba(0, 0, 0, 0.1); /* Reduced by 20% */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.ni-right-column {
+    flex: 1;
+    padding: 16px; /* Reduced by 20% */
+    border-radius: 10px;
+    background: #f9f9f9;
+    box-shadow: 0 3.2px 6.4px rgba(0, 0, 0, 0.1); /* Reduced by 20% */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Image Styling */
+.ni-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Adjusted to zoom out a bit */
+    border-radius: 10px;
+    box-shadow: 0 3.2px 6.4px rgba(0, 0, 0, 0.1); /* Reduced by 20% */
+}
+
+/* Image Caption Styling */
+.ni-image-caption {
+    font-size: 0.72em; /* Reduced by 20% */
+    color: #666;
+    text-align: center;
+    margin-top: 8px; /* Reduced by 20% */
+}
+
+/* Stat Box Styling */
+.ni-stat-box {
+    background-color: #d8d3cc;
+    padding: 24px; /* Reduced by 20% */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4.8px 9.6px rgba(0, 0, 0, 0.1); /* Reduced by 20% */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: slideIn 1s forwards; /* Added animation */
+    opacity: 0; /* Initial opacity for animation */
+}
+
+.ni-stat-box h2 {
+    font-size: 1.76em; /* Reduced by 20% */
+    color: #444;
+    margin-bottom: 8px; /* Reduced by 20% */
+}
+
+.ni-stat-box p {
+    font-size: 0.88em; /* Reduced by 20% */
+    color: #666;
+    line-height: 1.28; /* Reduced by 20% */
+}
+
+/* Footer Section Styling */
+.ni-footer-section {
+    text-align: center;
+    margin-top: 16px; /* Reduced by 20% */
+}
+
+/* Button Styling */
+.ni-cta-button {
+    background: #9d8977; /* New matching color */
+    color: rgb(0, 0, 0);
+    padding: 12px 24px; /* Reduced by 20% */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.04em; /* Reduced by 20% */
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    margin-top: 8px; /* Reduced by 20% */
+    margin-bottom: 16px;
+}
+
+.ni-cta-button:hover {
+    background: #9d8977; /* New matching hover color */
+    transform: scale(1.05);
+    box-shadow: 0 6.4px 12.8px rgba(0, 0, 0, 0.1); /* Reduced by 20% */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ni-main-content-section {
+        flex-direction: column;
+        height: auto; /* Adjust height for vertical layout */
+    }
+    .ni-image {
+        width: 100%;
+        height: auto;
+    }
+    .ni-left-column,
+    .ni-right-column {
+        height: auto; /* Adjust height for vertical layout */
+    }
+}
+
+/* Animation for Stat Box */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

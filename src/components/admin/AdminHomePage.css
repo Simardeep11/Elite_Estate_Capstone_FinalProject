@@ -1,0 +1,103 @@
+/* Root wrapper for the admin page, organizing everything in a column */
+.admin-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  width: 100%; /* Full width */
+}
+
+/* Styles for the heading to ensure it is centered */
+h1 {
+  text-align: center;
+  width: 100%; /* Ensures the heading is full width */
+  padding: 20px 0; /* Adds padding around the text for spacing */
+  background-color: #000; /* Optional: black background for the header */
+  color: #fff; /* White text for visibility */
+}
+
+/* Container for the form and property list, setting up side by side display */
+.admin-content {
+  display: flex;
+  width: 100%; /* Full width of the container */
+}
+
+/* Styling for the form section */
+.admin-form-section {
+  flex: 1; /* Takes up half of the flex container */
+  padding: 20px; /* Padding for spacing inside the form area */
+  border-right: 2px solid #ccc; /* Adds a border between form and list */
+}
+
+/* The form itself */
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between form inputs */
+}
+
+/* Input and Textarea styles */
+input[type="text"],
+input[type="number"],
+textarea {
+  padding: 8px;
+  margin-bottom: 10px; /* Space below each input */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the property list section */
+.admin-list {
+  flex: 1; /* Also takes up half of the flex container */
+  padding-left: 20px; /* Space between the border and the content */
+  overflow-y: auto; /* Allows scrolling if list is long */
+}
+
+/* Styles for individual property items */
+.admin-list-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.admin-list-item h2 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.admin-list-item img {
+  max-width: 100%; /* Ensures images do not overflow their container */
+  height: auto;
+}
+
+.admin-additional-images img {
+  width: 50px; /* Fixed width for additional images */
+  height: auto;
+  margin-right: 5px;
+}
+
+/* Responsive adjustments if needed */
+@media (max-width: 768px) {
+  .admin-content {
+    flex-direction: column; /* Stack form and list vertically on smaller screens */
+  }
+
+  .admin-form-section, .admin-list {
+    padding: 20px;
+    width: 100%; /* Full width on smaller screens */
+    border-right: none;
+  }
+}
