@@ -357,8 +357,8 @@ const AdminPage = () => {
                   ))}
                 </div>
                 <div className="button-group">
-  <button onClick={() => handleApprove(selectedBooking.id)} className="approve-button">Approve</button>
-  <button onClick={() => handleDelete(selectedBooking.id)} className="delete-button">Delete</button>
+  <button className="edit-button" onClick={() => handleEdit(property)}>Edit</button>
+  <button className="delete-button" onClick={() => handleDelete(property.id)}>Delete</button>
 </div>
 
               </div>

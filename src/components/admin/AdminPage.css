@@ -117,7 +117,7 @@
   margin-top: 20px;
 }
 
-.approve-button, .delete-button {
+.edit-button, .delete-button {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -127,13 +127,13 @@
   font-weight: bold;
 }
 
-.approve-button {
-  background: #28a745; /* Green */
+.edit-button {
+  background: #007bff; /* Blue */
   color: white;
 }
 
-.approve-button:hover {
-  background-color: #218838;
+.edit-button:hover {
+  background-color: #0056b3;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow on hover */
 }
 
